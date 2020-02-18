@@ -39,8 +39,6 @@ body {
 .items_catalogue {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -5px;
-  margin-right: -5px;
 }
 .item {
   display: flex;
