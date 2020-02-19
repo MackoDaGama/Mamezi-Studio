@@ -84,43 +84,47 @@
               var availability_count = data.list[i].availability.name;
             }
             $(".items_catalogue").append(`
-            <div class="item">
-              <div class="item_top_bar">
-                <div class="basket">
-                  <img src="images/basket.png" alt="basket" />
-                  <p>sztuk:${availability_count}</p>
+            <div class="item_wrapper">
+              <div class="item">
+                <div class="item_top_bar">
+                  <div class="basket">
+                    <img src="images/basket.png" alt="basket" />
+                    <p>sztuk:${availability_count}</p>
+                  </div>
+                  <div class="save">
+                    <p>oszczędzasz: <span>${data.list[i].price.gross
+                      .base_float -
+                      data.list[i].price.gross.promo_float}zł</span></p>
+                  </div>
                 </div>
-                <div class="save">
-                  <p>oszczędzasz: <span>${data.list[i].price.gross.base_float -
-                    data.list[i].price.gross.promo_float}zł</span></p>
+                <div class="item_img_container">
+                  <img
+                    src="https://www.outletmeblowy.pl/environment/cache/images/300_300_productGfx_${
+                      data.list[i].main_image
+                    }.jpg"
+                  />
                 </div>
-              </div>
-              <div class="item_img_container">
-                <img
-                  src="https://www.outletmeblowy.pl/environment/cache/images/300_300_productGfx_${
-                    data.list[i].main_image
-                  }.jpg"
-                />
-              </div>
-              <div class="item_information">
-                <div class="price">
-                  <p>
-                    ${data.list[i].price.gross.promo_float} zł
-                  </p>
-                  <p>
-                    ${data.list[i].price.gross.base_float} zł
-                  </p>
-                </div>
-                <div class="discription">
-                  <p>
-                    ${data.list[i].name}
-                  </p>
-                  <p>
-                    ${data.list[i].producer.name}
-                  </p>
+                <div class="item_information">
+                  <div class="price">
+                    <p>
+                      ${data.list[i].price.gross.promo_float} zł
+                    </p>
+                    <p>
+                      ${data.list[i].price.gross.base_float} zł
+                    </p>
+                  </div>
+                  <div class="discription">
+                    <p>
+                      ${data.list[i].name}
+                    </p>
+                    <p>
+                      ${data.list[i].producer.name}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
+            
           `);
           }
         });
@@ -135,40 +139,43 @@
             var availability_count = data.list[i].availability.name;
           }
           $(".items_catalogue").append(`
-            <div class="item">
-              <div class="item_top_bar">
-                <div class="basket">
-                  <img src="images/basket.png" alt="basket" />
-                  <p>sztuk:${availability_count}</p>
+          <div class="item_wrapper">
+              <div class="item">
+                <div class="item_top_bar">
+                  <div class="basket">
+                    <img src="images/basket.png" alt="basket" />
+                    <p>sztuk:${availability_count}</p>
+                  </div>
+                  <div class="save">
+                    <p>oszczędzasz: <span>${data.list[i].price.gross
+                      .base_float -
+                      data.list[i].price.gross.promo_float}zł</span></p>
+                  </div>
                 </div>
-                <div class="save">
-                  <p>oszczędzasz: <span>${data.list[i].price.gross.base_float -
-                    data.list[i].price.gross.promo_float}zł</span></p>
+                <div class="item_img_container">
+                  <img
+                    src="https://www.outletmeblowy.pl/environment/cache/images/300_300_productGfx_${
+                      data.list[i].main_image
+                    }.jpg"
+                  />
                 </div>
-              </div>
-              <div class="item_img_container">
-                <img
-                  src="https://www.outletmeblowy.pl/environment/cache/images/300_300_productGfx_${
-                    data.list[i].main_image
-                  }.jpg"
-                />
-              </div>
-              <div class="item_information">
-                <div class="price">
-                  <p>
-                    ${data.list[i].price.gross.promo_float} zł
-                  </p>
-                  <p>
-                    ${data.list[i].price.gross.base_float} zł
-                  </p>
-                </div>
-                <div class="discription">
-                  <p>
-                    ${data.list[i].name}
-                  </p>
-                  <p>
-                    ${data.list[i].producer.name}
-                  </p>
+                <div class="item_information">
+                  <div class="price">
+                    <p>
+                      ${data.list[i].price.gross.promo_float} zł
+                    </p>
+                    <p>
+                      ${data.list[i].price.gross.base_float} zł
+                    </p>
+                  </div>
+                  <div class="discription">
+                    <p>
+                      ${data.list[i].name}
+                    </p>
+                    <p>
+                      ${data.list[i].producer.name}
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

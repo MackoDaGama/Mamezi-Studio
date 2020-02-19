@@ -44,8 +44,12 @@ body {
   display: flex;
   flex-direction: column;
   border: 1px solid #ebebeb;
-  width: 24%;
+  width: 100%;
   margin: 5px;
+}
+.item_wrapper {
+  width: 25%;
+  display: flex;
 }
 .item:hover {
   border: 1px solid #bdbdbd;
@@ -223,7 +227,7 @@ body {
   margin-top: -10px;
 }
 @media (max-width: 1200px) {
-  .item {
+  .item_wrapper {
     width: 32%;
   }
   .items_catalogue {
@@ -236,9 +240,8 @@ body {
   }
 }
 @media (max-width: 900px) {
-  .item {
-    width: 47%;
-    box-sizing: border-box;
+  .item_wrapper {
+    width: 50%;
   }
   .top_bar {
     flex-direction: column;
@@ -274,10 +277,6 @@ body {
   }
   .price p:last-child {
     font-size: 12px;
-  }
-  .item {
-    width: 49%;
-    margin: 0px;
   }
   .item_information {
     padding-left: 10px;
